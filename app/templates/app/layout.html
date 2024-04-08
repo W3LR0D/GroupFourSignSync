@@ -1,49 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Django Application</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
-    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <title>Base</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .image-container {
+            text-align: center;
+            width: 100%;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar ul li {
+            float: left;
+        }
+
+        .navbar ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+        
+        .text-field {
+            margin-bottom: 20px; /* Space between text field and button */
+        }
+    </style>
 </head>
-
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Application name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                </ul>
-                {% include 'app/loginpartial.html' %}
-            </div>
-        </div>
+    {%block content%}
+    <div class="image-container">
+        <!-- Using a placeholder image -->
+        <img src="Home_Welcome.png" alt="Placeholder Image" />
     </div>
-
-    <div class="container body-content">
-{% block content %}{% endblock %}
-        <hr/>
-        <footer>
-            <p>&copy; {{ year }} - My Django Application</p>
-        </footer>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="centered-container">
+        <input type="text" class="text-field">
+        <button>Translate</button>
     </div>
-
-    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
-    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
-    <script src="{% static 'app/scripts/respond.js' %}"></script>
-{% block scripts %}{% endblock %}
-
+    {%endblock%}
 </body>
+
 </html>
