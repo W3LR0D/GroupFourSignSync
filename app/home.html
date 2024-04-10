@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignSync</title>
+    <title>Welcome to SignSync</title>
     <style>
         body {
             text-align: center;
         }
         #mainTitle {
-            font-size: 69px; /*bigger size */
-            text-align: center; /*centralized*/
-            margin-top: 40px; /*lower*/
+            display: none; /* Hide the main title */
+        }
+        #welcomeImage {
+            width: 100%;
+            height: auto;
         }
         #content {
             text-align: center;
@@ -34,7 +36,10 @@
 </head>
 <body style="background-image: url('https://raw.githubusercontent.com/W3LR0D/GroupFourSignSync/master/app/Images/Home_Images2.png'); background-size: cover;">
 
-    <h1 id="mainTitle">SignSync</h1>
+    <h1 id="mainTitle">SignSync.</h1>
+    <!-- Welcome image -->
+    <img id="welcomeImage" src="https://raw.githubusercontent.com/W3LR0D/GroupFourSignSync/master/app/Images/Home_Welcome2.png" alt="Welcome to SignSync">
+
     <div id="content">
         <h2>Empowering the World Beyond Words</h2>
         <p class="center-aligned"> <em>We leverage our website as a powerful tool to assist individuals seeking to bridge the communication gap 
@@ -47,10 +52,6 @@
         <p class="center-aligned">
         <em><a href="https://nationaldeafcenter.org/faq/how-many-deaf-people-live-in-the-united-states/">National Deaf Center</a></em>
         </p>
-<p>
-
-    
-</p>
 
     </div>
    <textarea name="blog" rows="10" cols="80"> Please enter text for ASL translation: </textarea>
