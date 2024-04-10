@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignSync</title>
-	<style>
-		#mainTitle {
-			font-size: 48px; /*bigger size */
-			text-align: center; /*centralized*/
-			margin-top: 50px; /*lower*/
-		}
-	</style>
+    <style>
+        body {
+            text-align: center;
+        }
+        #mainTitle {
+            font-size: 48px; /*bigger size */
+            text-align: center; /*centralized*/
+            margin-top: 50px; /*lower*/
+        }
+        #content {
+            text-align: center;
+            margin: 0 auto;
+            width: 70%; /* Adjust as needed */
+        }
+        #content h2 {
+            text-align: center;
+        }
+        #content p {
+            text-align: justify;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <h1 id="mainTitle">SignSync</h1>
-</body>
-</html>
-<div class="center">
-	<h2>Empowering the World Beyond Words</h2>
-	<p>We use our website to help people who want to learn how to connect with anyone who is hearing impaired.
-	Statistics from the National Deaf Center show that around 3.6% or approximately 11 MILLION individuals in the United States of America.
-	That is the same as 36 out of every 1,000 people having a significant hearing loss.
-	<a href="https://nationaldeafcenter.org/faq/how-many-deaf-people-live-in-the-united-states/">National Deaf Center</a> 
-	</p>
-</div>
-    <textarea id="textInput" placeholder="Enter text to translate"></textarea>
-    <button onclick="translate()">Translate to ASL</button>
-    <div id="aslOutput"></div>
-    
+    <div id="content">
+        <h2>Empowering the World Beyond Words</h2>
+        <p><em>We use our website to help people who want to learn how to connect with anyone who is hearing impaired.
+        Statistics from the National Deaf Center show that around 3.6% or approximately 11 MILLION individuals in the United States of America.
+        That is the same as 36 out of every 1,000 people having a significant hearing loss.
+        <a href="https://nationaldeafcenter.org/faq/how-many-deaf-people-live-in-the-united-states/">National Deaf Center</a></em></p>
+        <textarea id="textInput" placeholder="Enter text to translate"></textarea>
+        <button onclick="translate()">Translate to ASL</button>
+        <div id="aslOutput"></div>
+    </div>
     <script src="home.ts"></script>
 </body>
 </html>
