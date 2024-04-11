@@ -3,61 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE</title>
+    <title>SignSync</title>
     <style>
         body {
-            text-align: center;
-        }
-        #mainTitle {
-            font-size: 69px; /*bigger size */
-            text-align: center; /*centralized*/
-            margin-top: 40px; /*lower*/
-        }
-        #content {
-            text-align: center;
-            margin: 0 auto;
-            width: 70%; /* Adjust as needed */
-        }
-        #content h2 {
-            text-align: center;
-        }
-        #content p {
-            text-align: justify;
-            font-style: italic;
-        }
-        /* Center-aligned paragraphs */
-        #content .center-aligned {
-            text-align: center;
-            margin: 0 auto; /* Centers the paragraph */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://raw.githubusercontent.com/W3LR0D/GroupFourSignSync/master/app/Images/Home_Images2.png');
+            background-size: cover;
         }
     </style>
 </head>
-<body style="background-image: url('https://raw.githubusercontent.com/W3LR0D/GroupFourSignSync/master/app/Images/Home_Images2.png'); background-size: cover;">
-
-    <h1 id="mainTitle">TWO</h1>
-    <div id="content">
-        <h2>Empowering the World Beyond Words</h2>
-        <p class="center-aligned"> <em>We leverage our website as a powerful tool to assist individuals seeking to bridge the communication gap 
-            with those who are hearing impaired. According to data from the National Deaf Center, approximately 3.6% of the United States population, 
-            roughly 11 million people, are affected by significant hearing loss. That's equivalent to 36 out of every 1,000 individuals facing challenges
-            in auditory communication. Our initiative, aptly named signSync, serves as a vital conduit facilitating effective communication between those 
-            proficient in American Sign Language (ASL) and those less familiar with it. SignSync offers simplified ASL constructs, designed to streamline basic 
-            communication for both fluent ASL users and novices alike.</em></p>
-
-        <p class="center-aligned">
-        <em><a href="https://nationaldeafcenter.org/faq/how-many-deaf-people-live-in-the-united-states/">National Deaf Center</a></em>
-        </p>
-<p>
-
-    
-</p>
-
-    </div>
-   <textarea name="blog" rows="10" cols="80"> Please enter text for ASL translation: </textarea>
-    <div class="button-container">
-        <button onclick="translate()">Translate to ASL</button>
-    </div>
-    <div id="aslOutput"></div>
-    <script src="home.ts"></script>
+<body>
+    <img src="https://raw.githubusercontent.com/W3LR0D/GroupFourSignSync/master/app/Images/T_Video.png" alt="T_Video" style="margin-top: -100px;">
 </body>
 </html>
